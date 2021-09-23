@@ -1,0 +1,75 @@
+<ion-header >
+  <ion-toolbar color="secondary shade">
+    <ion-buttons slot="start">
+      <ion-back-button title=""></ion-back-button>
+      </ion-buttons>
+    <ion-title>Configuraões da Conta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-card>
+     <ion-card-header>
+        <ion-card-title>Contato</ion-card-title>
+     </ion-card-header>
+    <ion-card-content>
+        <ion-item>
+           <ion-label position="floating">Nome</ion-label>
+          <ion-input type="text"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+         <ion-input type="Email"></ion-input>
+       </ion-item>
+
+       <ion-item>
+        <ion-label position="floating">Alterar senha</ion-label>
+       <ion-input type="password"></ion-input>
+       </ion-item>
+
+       <ion-item>
+        <ion-label position="floating">Confirma senha</ion-label>
+       <ion-input type="password"></ion-input>
+       </ion-item>
+
+       <ion-item>
+        <ion-label position="floating">Numero Telefone</ion-label>
+       <ion-input type="tel"></ion-input>
+       </ion-item>
+      </ion-card-content>
+    </ion-card>
+    <ion-card>
+       <ion-card-content>
+       
+               <ion-card-header>
+                  <ion-card-title> Informe seu endereço:  </ion-card-title>
+               </ion-card-header>
+                
+
+                  <ion-item>
+                    <ion-label position="floating">Endereço</ion-label>
+                   <ion-input type="text"></ion-input>
+                   </ion-item>
+
+                   <ion-item>
+                   <ion-label position="floating">Numero</ion-label>
+                   <ion-input type="tel"></ion-input>
+                   </ion-item>
+
+                  <ion-item>
+                    <ion-label position="floating">Bairro</ion-label>
+                   <ion-input type="tel"></ion-input>
+                  </ion-item>
+                 
+        </ion-card-content>    
+              
+      </ion-card>
+ 
+      <ion-card><ion-button color="secondary shade"  size="full" (click)="register()">Alterar</ion-button>   </ion-card>
+      <ion-card><ion-button color="secondary shade"  size="full" (click)="register()">Cancelar</ion-button>   </ion-card>
+                     
+         
+  
+</ion-content>

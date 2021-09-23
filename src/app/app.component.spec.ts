@@ -1,3 +1,10 @@
+
+
+import { Component } from '@angular/core';
+import { MenuController } from '@ionic/angular';
+
+
+
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { TestBed, waitForAsync } from '@angular/core/testing';
 
@@ -43,4 +50,30 @@ describe('AppComponent', () => {
     expect(menuItems[1].getAttribute('ng-reflect-router-link')).toEqual('/folder/Outbox');
   }));
 
+
+
+
+
 });
+
+
+  
+
+export class MenuExample {
+
+constructor(private menu: MenuController) { }
+
+  openFirst() {
+    this.menu.enable(true, 'first');
+    this.menu.open('first');
+  }
+
+  openEnd() {
+    this.menu.open('end');
+  }
+
+  openCustom() {
+    this.menu.enable(true, 'custom');
+    this.menu.open('custom');
+  }
+}
